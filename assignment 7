@@ -1,0 +1,374 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Welcome to Colaboratory",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Nikhithachinnu/assignment-1/blob/master/assignment%207\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "JXV7s6_BQtxg",
+        "colab_type": "text"
+      },
+      "source": [
+        "Assignment 7"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YFK9yXKKQu8i",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 1"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uQZgFhXiQv-a",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to find the square root."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "t1U7BqEVQ2mW",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "f032d8f2-f21b-492f-9ad2-6bd024d58578"
+      },
+      "source": [
+        " import math\n",
+        "def sq_root(num):\n",
+        "    sq=math.sqrt(num)\n",
+        "    print(\"The square root of\",num,\"is:\",sq)\n",
+        "sq_root(64)"
+      ],
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The square root of 64 is: 8.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "2gVvPVP2Q8y2",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 2"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "u_6T19hHQ-L3",
+        "colab_type": "text"
+      },
+      "source": [
+        " Python Program to check if a number is positive, negative or zero."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "B7ub63GnRC-T",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "10144871-e850-483c-fb90-2a6a55c926dc"
+      },
+      "source": [
+        " def check_num(num):\n",
+        "    if num>0:\n",
+        "        print(num,\"is positive.\")\n",
+        "    elif num<0:\n",
+        "        print(num,\"is negative.\")\n",
+        "    else:\n",
+        "        print(num,\"is zero.\")\n",
+        "check_num(-1)"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "-1 is negative.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Tc23ULWuRHuW",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 3"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "m6LnPdO4RIll",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to checck if the given year is a leap year or not."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "3eLx1pC-ROlQ",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "e94a599b-b9f5-46e2-ee8c-5742ab2c5ab9"
+      },
+      "source": [
+        " def leap_year(year):\n",
+        "    if year%4==0:\n",
+        "        if year%100==0:\n",
+        "            if year%400==0:\n",
+        "                print(year,\"is a leap year.\")\n",
+        "            else:\n",
+        "                print(year,\"is not a leap year.\")\n",
+        "        else:\n",
+        "            print(year,\"is a leap year.\")\n",
+        "    else:\n",
+        "        print(year,\"is not a leap year.\")\n",
+        "leap_year(2020)"
+      ],
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "2020 is a leap year.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "XGArlVLtRTyu",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 4"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9cmZHQZ3RUvY",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to print the Fibonacci series"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lvbK-OmjRZ6L",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "45821a21-bb12-49ac-ea4f-eb995d99a4e0"
+      },
+      "source": [
+        " def fibonacci(num):\n",
+        "    first_term, second_term, count=0, 1, 0\n",
+        "    print(\"Fibonacci Series upto\",num,\"terms is given by: \")\n",
+        "    while count<num:\n",
+        "        print(first_term, end=\" \")\n",
+        "        next_term=first_term+second_term\n",
+        "        first_term=second_term\n",
+        "        second_term=next_term\n",
+        "        count+=1\n",
+        "fibonacci(10)"
+      ],
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Fibonacci Series upto 10 terms is given by: \n",
+            "0 1 1 2 3 5 8 13 21 34 "
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gQaOwmnXRhCO",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 5"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YtKhmtqMRiLb",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python program Check if a number is Armstrong number or not"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ywjoWKKxRrWK",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 339
+        },
+        "outputId": "3ea88029-3390-4c9d-8cb7-43a1e038e38c"
+      },
+      "source": [
+        " def armstrong(num):\n",
+        "    sum=0\n",
+        "    temp=num\n",
+        "    while temp!=0:\n",
+        "        last_digit= temp%10\n",
+        "        sum=sum+pow(last_digit,len(str(num)))\n",
+        "        temp=temp//10\n",
+        "    if num==sum:\n",
+        "        print(num,\"is an Armstrong Number.\")\n",
+        "    else:\n",
+        "        print(num,\"is not an Armstrong Number.\")\n",
+        "armstrong(54748)"
+      ],
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-38-2efc3daaf676>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     10\u001b[0m    \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     11\u001b[0m        \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mnum\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\"is not an Armstrong Number.\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 12\u001b[0;31m \u001b[0marmstrong\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m54748\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;32m<ipython-input-38-2efc3daaf676>\u001b[0m in \u001b[0;36marmstrong\u001b[0;34m(num)\u001b[0m\n\u001b[1;32m      4\u001b[0m    \u001b[0;32mwhile\u001b[0m \u001b[0mtemp\u001b[0m\u001b[0;34m!=\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m        \u001b[0mlast_digit\u001b[0m\u001b[0;34m=\u001b[0m \u001b[0mtemp\u001b[0m\u001b[0;34m%\u001b[0m\u001b[0;36m10\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m        \u001b[0msum\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0msum\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mpow\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlast_digit\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mnum\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m        \u001b[0mtemp\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mtemp\u001b[0m\u001b[0;34m//\u001b[0m\u001b[0;36m10\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m    \u001b[0;32mif\u001b[0m \u001b[0mnum\u001b[0m\u001b[0;34m==\u001b[0m\u001b[0msum\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: 'str' object is not callable"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8vy7uxIsSPga",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 6"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0lfpptK8SQlX",
+        "colab_type": "text"
+      },
+      "source": [
+        " Python program to Print all Armstrong Numbers in an interval."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "WlSLkEdZSX0x",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 120
+        },
+        "outputId": "c86b7eb8-1399-4728-dedf-3462da32e975"
+      },
+      "source": [
+        " start=int(input(\"Enter the starting index: \"))\n",
+        "end=int(input(\"Enter the ending index: \"))\n",
+        "if end>=1000:\n",
+        "    print(\"Invalid ending index.\")\n",
+        "else:\n",
+        "    for num in range(start,end+1):\n",
+        "        sum=0\n",
+        "        temp=num\n",
+        "        while temp>0:\n",
+        "            rem=temp%10\n",
+        "            sum+=rem**3\n",
+        "            temp=temp//10\n",
+        "        if num==sum:\n",
+        "            print(num)"
+      ],
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the starting index: 10\n",
+            "Enter the ending index: 999\n",
+            "153\n",
+            "370\n",
+            "371\n",
+            "407\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
